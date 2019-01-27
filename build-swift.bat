@@ -3,12 +3,12 @@ set builddir="S:\build\Ninja-DebugAssert\swift-windows-amd64"
 set PATH=S:\build\Ninja-DebugAssert\llvm-windows-amd64\bin;%PATH%
 
 cmake -G "Ninja"^
-  -DPYTHON_EXECUTABLE="C:\Python27\python.exe"^
+  -DPYTHON_EXECUTABLE="C:\Python27amd64\python.exe"^
   -DCMAKE_BUILD_TYPE=Debug^
   -DCMAKE_C_COMPILER=clang-cl^
   -DCMAKE_CXX_COMPILER=clang-cl^
   -DCMAKE_CXX_FLAGS="-Wno-c++98-compat -Wno-c++98-compat-pedantic"^
-  -DCMAKE_EXE_LINKER_FLAGS:STRING="/INCREMENTAL:NO"^
+  -DCMAKE_EXE_LINKER_FLAGS="/INCREMENTAL:NO"^
   -DCMAKE_SHARED_LINKER_FLAGS="/INCREMENTAL:NO"^
   -DSWIFT_INCLUDE_DOCS=NO^
   -DSWIFT_PATH_TO_LLVM_SOURCE="S:\llvm"^
@@ -23,7 +23,13 @@ cmake -G "Ninja"^
   -DSWIFT_WINDOWS_x86_64_ICU_I18N_INCLUDE="S:\icu\include"^
   -DSWIFT_WINDOWS_x86_64_ICU_I18N="S:\icu\lib64\icuin.lib"^
   -DCMAKE_INSTALL_PREFIX="C:\Library\Developer\Toolchains\unknown-Asserts-development.xctoolchain\usr"^
-  -S "S:\swift"^
-  -B %builddir%
+  -DCMAKE_INSTALL_PREFIX="C:\llvm"^
+  -DSWIFT_BUILD_STATIC_STDLIB=NO^
+  -DSWIFT_BUILD_STATIC_SDK_OVERLAY=NO^
+  -DSWIFT_BUILD_SOURCEKIT=YES^
+  -DSWIFT_ENABLE_SOURCEKIT_TESTS=NO^
+  -DSWIFT_INSTALL_COMPONENTS="autolink-driver;compiler;clang-resource-dir-symlink;stdlib;sdk-overlay;editor-integration;tools;sourcekit-inproc;swift-remote-mirror;swift-remote-mirror-headers"^
+  -B %builddir%^
+  -H "S:\swift
 
 cmake --build %builddir%
