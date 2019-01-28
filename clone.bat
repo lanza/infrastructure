@@ -7,4 +7,3 @@ git clone https://github.com/apple/swift s:\swift
 git clone https://github.com/apple/swift-lldb s:\lldb
 git clone https://github.com/apple/swift-corelibs-libdispath s:\swift-corelibs-libdispath
 git clone https://github.com/apple/swift-corelibs-foundation s:\swift-corelibs-foundation
-

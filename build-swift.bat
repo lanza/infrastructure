@@ -1,8 +1,10 @@
 set builddir="S:\build\Ninja-DebugAssert\swift-windows-amd64"
+mkdir %builddir%
 
 set PATH=S:\build\Ninja-DebugAssert\llvm-windows-amd64\bin;%PATH%
 
-cmake -G "Ninja"^
+pushd %builddir%
+cmake -G Ninja^
   -DPYTHON_EXECUTABLE="C:\Python27amd64\python.exe"^
   -DCMAKE_BUILD_TYPE=Debug^
   -DCMAKE_C_COMPILER=clang-cl^
@@ -29,7 +31,7 @@ cmake -G "Ninja"^
   -DSWIFT_BUILD_SOURCEKIT=YES^
   -DSWIFT_ENABLE_SOURCEKIT_TESTS=NO^
   -DSWIFT_INSTALL_COMPONENTS="autolink-driver;compiler;clang-resource-dir-symlink;stdlib;sdk-overlay;editor-integration;tools;sourcekit-inproc;swift-remote-mirror;swift-remote-mirror-headers"^
-  -B %builddir%^
-  -H "S:\swift
+  S:\swift
+popd
 
 cmake --build %builddir%

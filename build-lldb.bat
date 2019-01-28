@@ -1,5 +1,7 @@
 set builddir="S:/build/Ninja-DebugAssert/lldb-windows-amd64"
+mkdir %builddir%
 
+pushd %builddir%
 cmake -G Ninja^
   -DCMAKE_BUILD_TYPE=Debug^
   -DPYTHON_HOME="C:/Program Files (x86)/Microsoft Visual Studio/Shared/Python36_64"^
@@ -19,7 +21,7 @@ cmake -G Ninja^
   -DCMAKE_EXE_LINKER_FLAGS="/INCREMENTAL:NO"^
   -DCMAKE_SHARED_LINKER_FLAGS="/INCREMENTAL:NO"^
   -DCMAKE_INSTALL_PREFIX="C:\llvm"^
-  -B %builddir%^
-  -H s:\lldb
+  s:\lldb
+popd
 
 cmake --build %builddir%

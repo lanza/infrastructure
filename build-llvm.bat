@@ -1,5 +1,9 @@
 set builddir="S:\build\Ninja-DebugAssert\llvm-windows-amd64"
+mkdir %builddir%
 
+
+
+pushd %builddir%
 cmake -G Ninja^
   -DPYTHON_EXECUTABLE="C:\Python27amd64\python.exe"^
   -DCMAKE_BUILD_TYPE=Debug^
@@ -14,7 +18,7 @@ cmake -G Ninja^
   -DLLVM_INSTALL_TOOLCHAIN_ONLY=YES^
   -DCMAKE_INSTALL_PREFIX="C:\llvm"^
   -DLLVM_ENABLE_ASSERTIONS=YES^
-  -B %builddir%^
-  -H "S:\llvm"
+  "S:\llvm"
+popd
 
 cmake --build %builddir%      
