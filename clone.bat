@@ -9,3 +9,4 @@ git clone https://github.com/apple/swift-corelibs-libdispath s:\swift-corelibs-l
 git clone https://github.com/apple/swift-corelibs-foundation s:\swift-corelibs-foundation
 git clone https://github.com/apple/swift-package-manager s:\swiftpm
 git clone https://github.com/apple/swift-llbuild s:\llbuild
+git clone https://github.com/azadkuh/sqlite-amalgamation s:\sqlite
