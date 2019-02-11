@@ -4,6 +4,7 @@ git clone https://github.com/apple/swift-llvm s:\llvm
 git clone https://github.com/apple/swift s:\swift
 
 git clone https://github.com/azadkuh/sqlite-amalgamation s:\sqlite
+git clone https://github.com/curl/curl S:\curl
 git clone https://github.com/apple/swift-llbuild s:\llbuild
 git clone https://github.com/apple/swift-corelibs-libdispath s:\swift-corelibs-libdispath
 git clone https://github.com/apple/swift-corelibs-foundation s:\swift-corelibs-foundation
