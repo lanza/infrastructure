@@ -1,1 +1,1 @@
-C:/users/lanza/Projects/llvm-project/infrastructure/cmake
+C:/Users/lanza/.dotfiles/cmake

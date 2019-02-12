@@ -9,6 +9,8 @@ cmake -G Ninja^
   -DLLDB_ALLOW_STATIC_BINDINGS=YES^
   -DPYTHON_HOME="C:/Program Files (x86)/Microsoft Visual Studio/Shared/Python36_64"^
   -DPYTHON_EXECUTABLE="C:/Program Files (x86)/Microsoft Visual Studio/Shared/Python36_64/python.exe"^
+  -DCMAKE_CXX_COMPILER="clang-cl"^
+  -DCMAKE_C_COMPILER="clang-cl"^
   -DLLDB_PATH_TO_CMARK_SOURCE="S:/cmark"^
   -DLLDB_PATH_TO_LLVM_SOURCE="S:/llvm"^
   -DLLDB_PATH_TO_CLANG_SOURCE="S:/clang"^

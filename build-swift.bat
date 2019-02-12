@@ -5,7 +5,7 @@ set PATH=S:\build\Ninja-DebugAssert\llvm-windows-amd64\bin;C:\python27amd64;%PAT
 
 pushd %builddir%
 cmake -G Ninja^
-  -DPYTHON_EXECUTABLE="C:\Python27amd64\python.exe"^
+  -DPYTHON_EXECUTABLE="C:\Python27\python.exe"^
   -DCMAKE_BUILD_TYPE=Debug^
   -DCMAKE_C_COMPILER=clang-cl^
   -DCMAKE_CXX_COMPILER=clang-cl^
