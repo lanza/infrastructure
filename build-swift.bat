@@ -1,12 +1,13 @@
 set builddir="S:\b\swift"
 mkdir %builddir%
 
-set PATH=S:\build\Ninja-DebugAssert\llvm-windows-amd64\bin;C:\python27amd64;%PATH%
+set PATH=S:\b\llvm\bin;C:\python27amd64;%PATH%
+::set PATH=C:\python27amd64;%PATH%
 
 pushd %builddir%
 cmake -G Ninja^
   -DPYTHON_EXECUTABLE="C:\Python27\python.exe"^
-  -DCMAKE_BUILD_TYPE=Debug^
+  -DCMAKE_BUILD_TYPE="RelWithDebInfo"^
   -DCMAKE_C_COMPILER=clang-cl^
   -DCMAKE_CXX_COMPILER=clang-cl^
   -DCMAKE_CXX_FLAGS="-Wno-c++98-compat -Wno-c++98-compat-pedantic"^
