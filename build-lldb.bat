@@ -5,10 +5,10 @@ set path=C:\Python36;%path%
 
 pushd %builddir%
 cmake -G Ninja^
-  -DCMAKE_BUILD_TYPE=Debug^
+  -DCMAKE_BUILD_TYPE="RelWithDebInfo"^
   -DLLDB_ALLOW_STATIC_BINDINGS=YES^
-  -DPYTHON_HOME="C:/Program Files (x86)/Microsoft Visual Studio/Shared/Python36_64"^
-  -DPYTHON_EXECUTABLE="C:/Program Files (x86)/Microsoft Visual Studio/Shared/Python36_64/python.exe"^
+  -DPYTHON_HOME="C:/Python36"^
+  -DPYTHON_EXECUTABLE="C:/python36/python.exe"^
   -DCMAKE_CXX_COMPILER="clang-cl"^
   -DCMAKE_C_COMPILER="clang-cl"^
   -DLLDB_PATH_TO_CMARK_SOURCE="S:/cmark"^
