@@ -3,7 +3,7 @@ mkdir %builddir%
 
 pushd %builddir%
 cmake -G Ninja^
-  -DCMAKE_BUILD_TYPE=Debug^
+  -DCMAKE_BUILD_TYPE=RelWithDebInfo^
   -DCMAKE_C_COMPILER=clang-cl^
   -DCMAKE_CXX_COMPILER=clang-cl^
   -DCMAKE_SWIFT_COMPILER=S:\b\swift\bin\swiftc.exe^

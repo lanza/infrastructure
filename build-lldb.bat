@@ -5,7 +5,7 @@ set path=C:\Python36;%path%
 
 pushd %builddir%
 cmake -G Ninja^
-  -DCMAKE_BUILD_TYPE=Debug^
+  -DCMAKE_BUILD_TYPE="RelWithDebInfo"^
   -DLLDB_ALLOW_STATIC_BINDINGS=YES^
   -DPYTHON_HOME="C:/Program Files (x86)/Microsoft Visual Studio/Shared/Python36_64"^
   -DPYTHON_EXECUTABLE="C:/Program Files (x86)/Microsoft Visual Studio/Shared/Python36_64/python.exe"^
