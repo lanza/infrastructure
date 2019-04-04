@@ -3,7 +3,7 @@ mkdir %builddir%
 
 pushd %builddir%
 cmake -G Ninja^
-  -DCMAKE_BUILD_TYPE="Debug"^
+  -DCMAKE_BUILD_TYPE="RelWithDebInfo"^
   -DCMAKE_C_COMPILER=cl^
   -DCMAKE_CXX_COMPILER=cl^
   -DLLVM_DEFAULT_TARGET_TRIPLE=x86_64-unknown-windows-msvc^

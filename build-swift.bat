@@ -23,6 +23,7 @@ cmake -G Ninja^
   -DSWIFT_WINDOWS_x86_64_ICU_I18N="S:\icu\lib64\icuin.lib"^
   -DCMAKE_INSTALL_PREFIX="C:\swift"^
   -DPYTHON_EXECUTABLE="C:\Python27\python.exe"^
+  -SWIFT_STDLIB_ASSERTIONS=NO^
   S:\swift
 popd
 
