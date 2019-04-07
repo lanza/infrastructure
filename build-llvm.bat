@@ -14,7 +14,7 @@ cmake -G Ninja^
   -DLLVM_TARGETS_TO_BUILD="X86;AArch64;ARM"^
   -DCMAKE_INSTALL_PREFIX="C:\swift"^
   -DLLVM_ENABLE_DIA_SDK=YES^
-  -DPYTHON_EXECUTABLE="C:\Python36\python.exe"^
+  -DPYTHON_EXECUTABLE="C:\Python3\python.exe"^
   "S:\llvm"
 popd
 
